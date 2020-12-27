@@ -199,15 +199,37 @@ Pomegranate & Soft Peach
 
 ![screenshot of demo site](./screenshots/pomegranate-and-soft-peach.png)
 
-### Site title and Site introduction that appears on the homepage
+### Site title and introduction that appears on the homepage
 
-Update siteTitle and siteIntro in `src/index.njk` frontmatter
+Update siteTitle and siteIntro in `src/index.md` frontmatter
 
 ```
 ---
-siteTitle: Eleventy Duo
-siteIntro: Eleventy Duo is a production-ready and SEO-friendly starter for building a blog or personal website. Comes with a customizable duotone theme, minimal and clean design.
+layout: home
+title: 'Eleventy Duo'
 ---
+
+Eleventy Duo is a production-ready and SEO-friendly starter for building a blog or personal website. Comes with a customisable duotone theme, minimal and clean design.
+
+Checkout the [project's github repo](https://github.com/yinkakun/eleventy-duo) for more info.
+
+```
+
+### Update the About page
+
+Update the about page content in `src/about.md`
+
+```
+---
+title: About
+layout: base.njk
+---
+
+Eleventy Duo is a production-ready and SEO-friendly starter for building a blog or personal website. Comes with a customisable duotone theme, minimal and clean design.
+
+Checkout the [project's github repo](https://github.com/yinkakun/eleventy-duo) for more info.
+
+
 ```
 
 ## Add blog post
