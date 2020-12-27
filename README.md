@@ -8,41 +8,41 @@ Eleventy Duo is a production-ready and SEO-friendly starter for building a blog 
 
 ## Built with
 
-Eleventy for site generation (obviously)
+- Eleventy for site generation (obviously)
 
-Webpack for asset bundling
+- Webpack for asset bundling
 
-PostCSS for CSS processing
+- PostCSS for CSS processing
 
-Autoprefixer for vendor prefixing CSS
+- Autoprefixer for vendor prefixing CSS
 
-PostCSS Preset Env for traspiling css
+- PostCSS Preset Env for traspiling css
 
-PurgeCSS for unused CSS removal
+- PurgeCSS for unused CSS removal
 
-CSSNano for CSS minification
+- CSSNano for CSS minification
 
 ## Features
 
-Customizable duotone theme to make it your own.
+- Customizable duotone theme to make it your own.
 
-Fully responsive
+- Fully responsive
 
-SEO metadata and Open Graph tags
+- SEO metadata and Open Graph tags
 
-Maximize lighthouse score
+- Maximize lighthouse score
 
-Cache busting
+- Cache busting
 
-404 page
+- 404 page
 
-RSS feed for posts
+- RSS feed for posts
 
-Tags support
+- Tags support
 
-Pagination support
+- Pagination support
 
-Syntax highlighting with PrismJS
+- Syntax highlighting with PrismJS
 
 ## Getting Started
 
@@ -113,7 +113,7 @@ Eleventy’s output will be to a `public` directory at the root level.
 
 ## Customize
 
-### Edit site data `data/site.json`
+- Edit site data `data/site.json`
 
 This file contains your site title and author details and can be used to store any other commonly used site data.
 
@@ -131,11 +131,11 @@ This file contains your site title and author details and can be used to store a
 }
 ```
 
-### Replace favicon in `src/favicon.ico`. Default is a paint palette image.
+- Replace favicon in `src/favicon.ico`. Default is a paint palette image.
 
-### Replace social image in `src/images/social-images.png` Default is a screenshot of demo site.
+- Replace social image in `src/images/social-images.png` Default is a screenshot of demo site.
 
-### Site title and introduction that appears on the homepage
+- Site title and introduction that appears on the homepage
 
 Update siteTitle and siteIntro in `src/index.md` frontmatter
 
@@ -151,7 +151,7 @@ Checkout the [project's github repo](https://github.com/yinkakun/eleventy-duo) f
 
 ```
 
-### Update the About page
+- Update the About page
 
 Update the about page content in `src/about.md`
 
@@ -168,7 +168,7 @@ Checkout the [project's github repo](https://github.com/yinkakun/eleventy-duo) f
 
 ```
 
-### Add blog post
+- Add blog post
 
 Blog posts is in markdown. The starter already contains some demo contents.
 
@@ -188,7 +188,7 @@ Page content here...
 ---
 ```
 
-### Customize site theme, adjust these CSS variables at `src/assets/css/theme.css`, some nice presets are:
+- Customize site theme, adjust these CSS variables at `src/assets/css/theme.css`, some nice presets are:
 
 Mariner & Black White
 
