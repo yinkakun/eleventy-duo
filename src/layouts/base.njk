@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href={{ page.url | url | absoluteUrl(site.url) }}>
+
+    {% bundledcss %}
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Work+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+    <title>
+      {{  title  | escape }}
+      {% if title %}
+         | {{ site.name }}
+      {% else %}
+        {{ site.name }}
+      {% endif %}
+    </title>
+
+    <link rel="icon" type= “image/x-icon” href="/favicon.ico">
+
+    <meta property="og:title" content="{{  title or site.name | escape }}">
+    <meta property="og:site_name" content="{{ site.name }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="{{ site.url + page.url }}"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    {% if site.author.twitterHandle %}
+      <meta name="twitter:creator" content="@{{ site.author.twitterHandle | replace('@', '') }}"/>
+    {% endif %}
+
+    {% set desc = description %}
+    {% if not desc %}
+      {% set desc = content | striptags | truncate(140) %}
+    {% endif %}
+    {% if desc %}
+      <meta name="description" content="{{ desc | escape  }}">
+      <meta property="og:description" content="{{ desc | escape }}">
+      <meta name="description" content="{{ desc | escape }}"/>
+    {% endif %}
+
+    {% if not socialImage %}
+      {% set socialImage = site.socialImage %}
+    {% endif %}
+    {% if socialImage %}
+      <meta property="og:image" content="{{ socialImage | url | absoluteUrl(site.url) }}"/>
+      <meta name="twitter:image" content="{{ socialImage | url | absoluteUrl(site.url) }}"/>
+    {% endif %}
+
+  </head>
+  <body>
+    <div class="layout-wrapper">
+
+      <header class="header">
+        <div class="logo">
+          <a  href="{{ '/' | url }}">{{site.name}}</a>
+        </div>
+
+        <ul class="nav">
+          <li class="nav-item">
+            <a href={{ "/blog/" | url }}>blog</a>
+          </li>
+          <li class="nav-item">
+            <a href={{ "/about/" | url }}>about</a>
+          </li>
+        </ul>
+      </header>
+
+      <main class="main">
+        {{ content | safe }}
+      </main>
+
+      <footer class="footer">
+
+        <span>
+    Handcrafted with 💙 by 
+      <a href="https://twitter.com/yinkakun" target="_blank" rel="noopener">Yinka Adedire
+      </a>
+        </span>
+
+        <ul class="footer__nav-list">
+          <li>
+            <a href={{ "/styleguide/" | url }}>Styleguide</a>
+          </li>
+          <li>
+            <a href={{ "/feed.xml" | url}} >RSS</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    {% bundledjs %}
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "Eleventy Duo",
+  "description": "An 11ty starter kit.",
+  "url": "https://eleventyduo.netlify.app",
+  "author": {
+    "name": "Author Name",
+    "email": "author@site.com",
+    "twitterHandle": "author_handle"
+  },
+  "socialImage": "/images/social-image.jpg"
+}

@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+<header class="intro">
+  <h1>{{siteTitle}}</h1>
+  <p>{{siteIntro}}</p>
+</header>
+
+<section class="post-list__wrapper">
+  <h2 class="post-list__heading">Recent Posts</h2>
+
+  {% set postslist = collections.posts | head(-10) %}
+  {% include "posts-list.njk" %}
+
+</section>
+
+<a class="all-posts" href="{{ '/blog/' | url }}">All Posts</a>

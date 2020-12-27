@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+}
+
+.logo {
+  display: flex;
+  flex: 1;
+}
+
+.logo a {
+  display: flex;
+  flex: 0 0 auto;
+  padding: 0.4rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-decoration: none;
+  color: var(--background);
+  background-color: var(--accent);
+}
+
+.logo a:hover {
+  opacity: 0.7;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav > * {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.nav a {
+  padding: 0.4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
