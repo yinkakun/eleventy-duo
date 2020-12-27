@@ -139,8 +139,6 @@ This file contains your site title and author details and can be used to store a
 
 some nice presets are:
 
-![screenshot of demo site](./screenshots/mariner-and-black-white.png)
-
 Mariner & Black White
 
 ```css
@@ -151,7 +149,7 @@ Mariner & Black White
 }
 ```
 
-![screenshot of demo site](./screenshots/deep-teal-and-saltpan.png)
+![screenshot of demo site](./screenshots/mariner-and-black-white.png)
 
 Deep Teal & Saltpan
 
@@ -163,7 +161,7 @@ Deep Teal & Saltpan
 }
 ```
 
-![screenshot of demo site](./screenshots/martinique-and-black-white.png)
+![screenshot of demo site](./screenshots/deep-teal-and-saltpan.png)
 
 Martinique & Black White
 
@@ -175,7 +173,7 @@ Martinique & Black White
 }
 ```
 
-![screenshot of demo site](./screenshots/jungle-green-and-woodsmoke.png)
+![screenshot of demo site](./screenshots/martinique-and-black-white.png)
 
 Jungle Green & Woodsmoke
 
@@ -187,7 +185,7 @@ Jungle Green & Woodsmoke
 }
 ```
 
-![screenshot of demo site](./screenshots/pomegranate-and-soft-peach.png)
+![screenshot of demo site](./screenshots/jungle-green-and-woodsmoke.png)
 
 Pomegranate & Soft Peach
 
@@ -198,6 +196,8 @@ Pomegranate & Soft Peach
   --color: #343239;
 }
 ```
+
+![screenshot of demo site](./screenshots/pomegranate-and-soft-peach.png)
 
 ### Site title and Site introduction that appears on the homepage
 
