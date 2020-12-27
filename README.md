@@ -135,9 +135,7 @@ This file contains your site title and author details and can be used to store a
 
 - Replace social image in `src/images/social-images.png` Default is a screenshot of demo site.
 
-- Site title and introduction that appears on the homepage
-
-Update siteTitle and siteIntro in `src/index.md` frontmatter
+- Update Site title and introduction that appears on the homepage in `src/index.md`
 
 ```
 ---
