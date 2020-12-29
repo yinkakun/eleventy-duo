@@ -23,7 +23,7 @@ body {
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
   font-family: 'Work Sans', sans-serif;
-  font-family: 'Merriweather', serif;
+  /* font-family: 'Merriweather', serif; */
 }
 
 h1,
