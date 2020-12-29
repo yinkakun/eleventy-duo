@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Work+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
     <title>
       {{  title  | escape }}
       {% if title %}
@@ -54,18 +56,27 @@
     <div class="layout-wrapper">
 
       <header class="header">
-        <div class="logo">
-          <a  href="{{ '/' | url }}">{{site.name}}</a>
-        </div>
 
-        <ul class="nav">
-          <li class="nav-item">
-            <a href={{ "/blog/" | url }}>blog</a>
-          </li>
-          <li class="nav-item">
-            <a href={{ "/about/" | url }}>about</a>
-          </li>
-        </ul>
+        <h1 class="site-title">
+          {{site.name}}
+        </h1>
+        <p class="site-subtitle">
+          {{ site.subtitle }}
+        </p>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav-item">
+              <a href={{ "/" | url }}>home</a>
+            </li>
+            <li class="nav-item">
+              <a href={{ "/blog/" | url }}>blog</a>
+            </li>
+            <li class="nav-item">
+              <a href={{ "/about/" | url }}>about</a>
+            </li>
+          </ul>
+        </nav>
       </header>
 
       <main class="main">
@@ -75,9 +86,9 @@
       <footer class="footer">
 
         <span>
-    Handcrafted with 💙 by 
-      <a href="https://twitter.com/yinkakun" target="_blank" rel="noopener">Yinka Adedire
-      </a>
+    Created by by 
+      <a href="https://twitter.com/yinkakun" target="_blank" rel="noopener">Yinka
+      </a> Powered by <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty</a>
         </span>
 
         <ul class="footer__nav-list">

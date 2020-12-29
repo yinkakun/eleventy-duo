@@ -4,6 +4,8 @@
 
 .tags {
   margin-top: 0.5rem;
+  text-align: center;
+  font-size: var(--text-sm);
 }
 
 .post-list__wrapper {
@@ -12,18 +14,36 @@
 
 .post-list__heading {
   font-size: 2rem;
+  text-align: center;
 }
 
 .post-list {
   list-style: none;
 }
 
+.post-list__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-list__title,
+.post-list__tags,
+.post-list__meta,
+.post-list__read-more {
+  text-align: center;
+}
+
 .post-list__title {
   font-size: 1.4rem;
 }
 
+.post-list__title a {
+  color: currentColor;
+  text-decoration: underline;
+}
+
 .post-list > * {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .post-list > * + * {
@@ -33,6 +53,7 @@
 .post-list__meta {
   opacity: 0.8;
   font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
 
 .post-list__meta > * + * {
@@ -42,7 +63,11 @@
 .post-list__tags {
   opacity: 0.8;
   font-size: 0.9rem;
-  margin-top: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+.post-list__tags a {
+  color: currentColor;
 }
 
 .post-list__tags > * + * {
@@ -58,12 +83,25 @@
   font-size: 1rem;
   text-transform: capitalize;
   margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: currentColor;
+  text-decoration: underline;
 }
 
-.all-posts {
-  margin-top: 4rem;
+.all-posts-link {
+  margin-top: 6rem;
   width: fit-content;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
+  font-size: var(--text-lg);
+  text-decoration: underline;
+  color: currentColor;
+}
+
+.all-posts-link:hover,
+.post-list__title a:hover,
+.post-list__read-more:hover {
+  color: var(--accent);
 }

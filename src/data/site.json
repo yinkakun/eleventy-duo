@@ -1,6 +1,7 @@
 {
   "name": "Eleventy Duo",
-  "description": "An 11ty starter kit.",
+  "description": "A minimalist Eleventy theme for personal blog.",
+  "subtitle": "A minimalist Eleventy theme for personal blog.",
   "url": "https://eleventyduo.netlify.app",
   "author": {
     "name": "Author Name",

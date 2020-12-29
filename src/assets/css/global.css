@@ -15,16 +15,16 @@ body::-webkit-scrollbar {
 
 body {
   scrollbar-width: thin;
-  scrollbar-color: var(--accent) var(--background);
+  scrollbar-color: var(--color) var(--background);
   height: 100%;
 }
 
 body::-webkit-scrollbar-track {
-  background: color-mod(var(--background) blend(var(--accent) 2%));
+  background: color-mod(var(--background) blend(var(--color) 2%));
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--accent);
+  background-color: var(--color);
 }
 
 *,
@@ -72,11 +72,11 @@ a {
   color: inherit;
   text-decoration: inherit;
   transition: all 300ms linear;
-  color: var(--accent);
+  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--accent);
 }
 
 ol {

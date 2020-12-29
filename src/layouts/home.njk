@@ -3,8 +3,7 @@ layout: base
 ---
 
 <header class="intro">
-  <h1>{{ title }}</h1>
-  <p>{{ content | safe }}</p>
+  {{ content | safe }}
 </header>
 
 <section class="post-list__wrapper">
@@ -15,4 +14,4 @@ layout: base
 
 </section>
 
-<a class="all-posts" href="{{ '/blog/' | url }}">All Posts</a>
+<a class="all-posts-link" href="{{ '/blog/' | url }}">View All Posts</a>

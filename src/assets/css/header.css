@@ -1,52 +1,52 @@
 .header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  text-transform: capitalize;
-  margin-bottom: 4rem;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
 }
 
-.logo {
+.site-title {
+  /* text-transform: uppercase; */
+  font-size: var(--text-5xl: 5rem);
+  font-weight: normal;
+}
+
+.site-subtitle {
+  opacity: 0.9;
+  margin-top: 1rem;
+  text-transform: lowercase;
+}
+
+.nav__list {
   display: flex;
-  flex: 1;
-}
-
-.logo a {
-  display: flex;
-  flex: 0 0 auto;
-  padding: 0.4rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  text-decoration: none;
-  color: var(--background);
-  background-color: var(--accent);
-}
-
-.logo a:hover {
-  opacity: 0.7;
-}
-
-.nav {
-  display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4rem;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  text-transform: capitalize;
+  font-size: var(--text-base);
+  text-transform: uppercase;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #eee;
 }
 
-.nav > * {
-  display: flex;
-  margin-left: 1rem;
+.nav__list a {
+  color: var(--color);
+  text-decoration: none;
+  opacity: 0.8;
 }
 
-.nav a {
+.nav__list a {
   padding: 0.4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.nav a:hover {
-  opacity: 0.7;
-  text-decoration: underline;
+.nav__list a:hover {
+  opacity: 1;
+  text-decoration: none;
 }
