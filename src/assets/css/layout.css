@@ -5,15 +5,14 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  /* padding-left: 1rem; */
+  /* padding-right: 1rem; */
 }
 
 .main {
   display: flex;
-
   padding-bottom: 4rem;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
