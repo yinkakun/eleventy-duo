@@ -1,9 +1,7 @@
 .layout-wrapper {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto minmax(0, 1fr) auto;
   min-height: 100%;
-  max-width: none;
-  width: 100%;
 }
 
 .layout-wrapper > * {
@@ -18,4 +16,5 @@
   flex-direction: column;
   padding-left: 1rem;
   padding-right: 1rem;
+  min-width: 0;
 }
