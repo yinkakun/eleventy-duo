@@ -27,7 +27,8 @@
 .post-list__item {
   display: flex;
   flex-direction: column;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .post-list__item:not(:last-child) {
@@ -44,16 +45,7 @@
   text-decoration: none;
 }
 
-.post-list > * {
-  margin-top: 4rem;
-}
-
-.post-list > * + * {
-  margin-top: 4rem;
-}
-
 .post-list__meta {
-  /* opacity: 0.8; */
   font-size: var(--text-sm);
   margin-top: 0.5rem;
 }
@@ -63,7 +55,6 @@
 }
 
 .post-list__tags {
-  /* opacity: 0.8; */
   text-decoration: none;
   font-size: var(--text-sm);
   margin-top: 0.5rem;
