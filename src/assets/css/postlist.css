@@ -27,6 +27,11 @@
 .post-list__item {
   display: flex;
   flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.post-list__item:not(:last-child) {
+  box-shadow: inset 0 -1px 0 rgba(230, 230, 230, 1);
 }
 
 .post-list__title {
