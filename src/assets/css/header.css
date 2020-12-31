@@ -1,16 +1,29 @@
 .header {
+  padding: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  max-width: none;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.header__content {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   text-align: center;
-  margin-top: 4rem;
-  margin-bottom: 6rem;
+  max-width: 680px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site-title {
-  /* text-transform: uppercase; */
   font-size: var(--text-5xl: 5rem);
   font-weight: normal;
+}
+
+.site-title a {
+  text-decoration: none;
 }
 
 .site-subtitle {
@@ -21,23 +34,21 @@
 
 .nav__list {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 4rem;
   list-style: none;
   text-transform: capitalize;
   font-size: var(--text-base);
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-style: solid;
-  border-width: 1px 0;
-  border-color: #eee;
 }
 
 .nav__list a {
   color: var(--color);
   text-decoration: none;
   opacity: 0.8;
+  padding: 0.5rem;
 }
 
 .nav__list a {

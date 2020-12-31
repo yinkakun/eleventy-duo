@@ -8,9 +8,7 @@
     {% bundledcss %}
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Work+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
 
     <title>
       {{  title  | escape }}
@@ -57,26 +55,27 @@
 
       <header class="header">
 
-        <h1 class="site-title">
-          {{site.name}}
-        </h1>
-        <p class="site-subtitle">
-          {{ site.subtitle }}
-        </p>
+        <div class="header__content">
+          <h1 class="site-title">
+            <a href={{ "/" | url }}>
+              {{site.name}}
+            </a>
+          </h1>
 
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav-item">
-              <a href={{ "/" | url }}>home</a>
-            </li>
-            <li class="nav-item">
-              <a href={{ "/blog/" | url }}>blog</a>
-            </li>
-            <li class="nav-item">
-              <a href={{ "/about/" | url }}>about</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav-item">
+                <a href={{ "/" | url }}>subscribe</a>
+              </li>
+              <li class="nav-item">
+                <a href={{ "/blog/" | url }}>archive</a>
+              </li>
+              <li class="nav-item">
+                <a href={{ "/about/" | url }}>about</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <main class="main">
@@ -84,23 +83,33 @@
       </main>
 
       <footer class="footer">
-
-        <span>
+        <div class="footer__content">
+          <p>
+            <span>
     Created by by 
       <a href="https://twitter.com/yinkakun" target="_blank" rel="noopener">Yinka
-      </a> Powered by <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty</a>
-        </span>
+      </a>
+            </span>
 
-        <ul class="footer__nav-list">
-          <li>
-            <a href={{ "/styleguide/" | url }}>Styleguide</a>
-          </li>
-          <li>
-            <a href={{ "/feed.xml" | url}} >RSS</a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+            <span>| </span>
+
+            <span>
+      Powered by <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty</a>
+            </span>
+          </p>
+
+          <ul class="footer__nav-list">
+            <li>
+              <a href={{ "/styleguide/" | url }}>Styleguide</a>
+            </li>
+            <li>
+              <a href={{ "/feed.xml" | url}} >RSS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
 
     {% bundledjs %}
   </body>

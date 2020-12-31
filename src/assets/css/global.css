@@ -6,7 +6,6 @@ html {
 
 body {
   background-color: var(--background);
-  background: color-mod(var(--background) blend(var(--accent) 2%));
 }
 
 body::-webkit-scrollbar {
@@ -15,16 +14,16 @@ body::-webkit-scrollbar {
 
 body {
   scrollbar-width: thin;
-  scrollbar-color: var(--color) var(--background);
+  scrollbar-color: color-mod(var(--color) alpha(60%)) var(--background);
   height: 100%;
 }
 
 body::-webkit-scrollbar-track {
-  background: color-mod(var(--background) blend(var(--color) 2%));
+  background: var(--background);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--color);
+  background-color: color-mod(var(--color) alpha(70%));
 }
 
 *,
@@ -71,7 +70,7 @@ a {
   text-decoration: none;
   color: inherit;
   text-decoration: inherit;
-  transition: all 300ms linear;
+  transition: all 200ms linear;
   text-decoration: underline;
 }
 

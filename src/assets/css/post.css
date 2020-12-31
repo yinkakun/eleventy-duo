@@ -8,13 +8,7 @@
   margin-top: 4rem;
 }
 
-.post__header {
-  text-align: center;
-}
-
 .post__details {
-  text-align: center;
-  /* display: flex; */
   opacity: 0.6;
   font-size: 0.9rem;
 }
@@ -34,7 +28,6 @@
 .post__tags {
   opacity: 0.8;
   font-size: var(--text-sm);
-  /* text-align: center; */
 }
 
 .post__tags * + * {

@@ -8,14 +8,6 @@
 @import 'footer.css';
 @import 'post.css';
 
-.intro {
-  text-align: center;
-}
-
-.intro > * + * {
-  margin-top: 1rem;
-}
-
 .not-found {
   display: grid;
   place-items: center;
@@ -27,9 +19,5 @@
 
 .not-found p {
   font-size: var(--text-3xl);
-  text-align: center;
-}
-
-.main h1 {
   text-align: center;
 }

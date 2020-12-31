@@ -1,11 +1,15 @@
-.tags * + * {
-  margin-left: 1rem;
+.tags > {
+  margin-right: 1rem;
+  margin-top: 0.5rem;
 }
 
 .tags {
   margin-top: 0.5rem;
-  text-align: center;
   font-size: var(--text-sm);
+}
+
+.tags a {
+  text-decoration: none;
 }
 
 .post-list__wrapper {
@@ -13,8 +17,7 @@
 }
 
 .post-list__heading {
-  font-size: 2rem;
-  text-align: center;
+  font-size: var(--text-3xl);
 }
 
 .post-list {
@@ -26,20 +29,14 @@
   flex-direction: column;
 }
 
-.post-list__title,
-.post-list__tags,
-.post-list__meta,
-.post-list__read-more {
-  text-align: center;
-}
-
 .post-list__title {
-  font-size: 1.4rem;
+  font-size: var(--text-2xl);
 }
 
 .post-list__title a {
   color: currentColor;
-  text-decoration: underline;
+  font-weight: normal;
+  text-decoration: none;
 }
 
 .post-list > * {
@@ -51,27 +48,33 @@
 }
 
 .post-list__meta {
-  opacity: 0.8;
-  font-size: 0.9rem;
+  /* opacity: 0.8; */
+  font-size: var(--text-sm);
   margin-top: 0.5rem;
 }
 
 .post-list__meta > * + * {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 
 .post-list__tags {
-  opacity: 0.8;
-  font-size: 0.9rem;
+  /* opacity: 0.8; */
+  text-decoration: none;
+  font-size: var(--text-sm);
   margin-top: 0.5rem;
 }
 
 .post-list__tags a {
+  text-decoration: none;
   color: currentColor;
 }
 
+.post-list__tags a:hover {
+  color: var(--accent);
+}
+
 .post-list__tags > * + * {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 
 .post-list__excerpt {
@@ -83,10 +86,8 @@
   font-size: 1rem;
   text-transform: capitalize;
   margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  color: currentColor;
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--accent);
 }
 
 .all-posts-link {
