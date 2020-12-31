@@ -4,34 +4,26 @@
   margin-bottom: 4rem;
   max-width: none;
   width: 100%;
-  /* border-bottom: 1px solid #eee; */
-
   box-shadow: inset 0 -1px 0 rgba(230, 230, 230, 1);
 }
 
 .header__content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   max-width: 680px;
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .site-title {
   font-size: var(--text-5xl: 5rem);
-  font-weight: normal;
+  text-align: center;
 }
 
 .site-title a {
   text-decoration: none;
 }
 
-.site-subtitle {
-  opacity: 0.9;
-  margin-top: 1rem;
-  text-transform: lowercase;
+.site-title a:hover {
+  color: currentColor;
 }
 
 .nav__list {
@@ -51,12 +43,6 @@
   text-decoration: none;
   opacity: 0.8;
   padding: 0.5rem;
-}
-
-.nav__list a {
-  padding: 0.4rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .nav__list a:hover {
