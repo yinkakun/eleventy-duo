@@ -31,21 +31,20 @@
   justify-content: space-around;
   margin-top: 4rem;
   list-style: none;
-  text-transform: capitalize;
   font-size: var(--text-base);
-  text-transform: capitalize;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 .nav__list a {
-  color: var(--color);
+  color: rgb(117, 117, 117);
   text-decoration: none;
-  opacity: 0.8;
   padding: 0.5rem;
+  text-transform: uppercase;
+  line-height: 20px;
 }
 
 .nav__list a:hover {
-  opacity: 1;
+  color: rgb(25, 25, 25);
   text-decoration: none;
 }

@@ -1,15 +1,17 @@
-.tags > {
+.tags > * {
   margin-right: 1rem;
   margin-top: 0.5rem;
 }
 
 .tags {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   font-size: var(--text-sm);
+  margin-bottom: 1rem;
 }
 
 .tags a {
   text-decoration: none;
+  color: rgb(117, 117, 117);
 }
 
 .post-list__wrapper {
@@ -18,6 +20,7 @@
 
 .post-list__heading {
   font-size: var(--text-3xl);
+  margin-bottom: 2rem;
 }
 
 .post-list {
@@ -29,10 +32,11 @@
   flex-direction: column;
   padding-bottom: 3rem;
   padding-top: 3rem;
+  border-top: 1px solid rgba(230, 230, 230, 1);
 }
 
-.post-list__item:not(:last-child) {
-  box-shadow: inset 0 -1px 0 rgba(230, 230, 230, 1);
+.post-list__item:last-child {
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
 }
 
 .post-list__title {
@@ -40,14 +44,15 @@
 }
 
 .post-list__title a {
-  color: currentColor;
   font-weight: normal;
   text-decoration: none;
+  color: rgb(41, 41, 41);
 }
 
 .post-list__meta {
   font-size: var(--text-sm);
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  color: rgb(117, 117, 117);
 }
 
 .post-list__meta > * + * {
@@ -62,7 +67,7 @@
 
 .post-list__tags a {
   text-decoration: none;
-  color: currentColor;
+  color: rgb(117, 117, 117);
 }
 
 .post-list__tags a:hover {
@@ -75,6 +80,7 @@
 
 .post-list__excerpt {
   margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .post-list__read-more {

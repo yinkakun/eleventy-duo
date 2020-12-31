@@ -5,7 +5,7 @@
   max-width: none;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
-  color: color-mod(var(--background) a(80%));
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .footer__content {
