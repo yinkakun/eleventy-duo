@@ -105,9 +105,3 @@
   text-decoration: underline;
   color: currentColor;
 }
-
-.all-posts-link:hover,
-.post-list__title a:hover,
-.post-list__read-more:hover {
-  color: var(--accent);
-}
