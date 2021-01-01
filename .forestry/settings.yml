@@ -13,7 +13,6 @@ sections:
 - type: document
   path: src/data/navigation.json
   label: Navigation
-  match: "**/*"
 upload_dir: src/images
 public_path: "/images"
 front_matter_path: ''
