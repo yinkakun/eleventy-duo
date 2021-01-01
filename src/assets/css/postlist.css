@@ -84,7 +84,7 @@
 }
 
 .post-list__read-more {
-  display: inline-block;
+  width: fit-content;
   font-size: 1rem;
   text-transform: capitalize;
   margin-top: 1rem;
