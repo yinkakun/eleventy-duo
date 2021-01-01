@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: src/posts
+  path: src/blog
   label: Posts
   create: documents
   match: "*.md"
