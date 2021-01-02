@@ -12,6 +12,8 @@ sections:
   create: documents
   match: "*.md"
   new_doc_ext: md
+  templates:
+  - post
 - type: document
   path: src/data/navigation.json
   label: Navigation
