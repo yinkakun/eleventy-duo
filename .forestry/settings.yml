@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
-  label: Contents
+  label: Posts
 - type: directory
   path: src/blog
   label: Posts
@@ -14,6 +14,8 @@ sections:
   new_doc_ext: md
   templates:
   - post
+- type: heading
+  label: Pages
 - type: document
   path: src/data/navigation.json
   label: Navigation
