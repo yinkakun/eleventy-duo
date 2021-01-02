@@ -1,10 +1,6 @@
 <ul class="post-list">
   {% for post in postslist | reverse %}
     <li class="post-list__item">
-      <h3 class="post-list__title">
-        <a  href="{{ post.url }}">{{ post.data.title }}</a>
-      </h3>
-
       <div class="post-list__meta">
         <time datetime="{{ post.date | htmlDateString }}">
           {{ post.date | readableDate }}
@@ -12,8 +8,6 @@
         <span> | </span>
         <span>{{ post | readingTime }} read</span>
       </div>
-
-      <p class="post-list__excerpt">{{ post.templateContent | excerpt | safe  }}</p>
 
       <div class="post-list__tags">
         {% for tag in post.data.tags %}
@@ -23,6 +17,12 @@
           {%- endif -%}
         {% endfor %}
       </div>
+
+      <h3 class="post-list__title">
+        <a  href="{{ post.url }}">{{ post.data.title }}</a>
+      </h3>
+
+      <p class="post-list__excerpt">{{ post.templateContent | excerpt | safe  }}</p>
 
       <a class="post-list__read-more" href="{{ post.url }}">read article</a>
     </li>

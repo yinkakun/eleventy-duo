@@ -21,7 +21,7 @@ body {
   font-variant-ligatures: contextual;
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 h1,

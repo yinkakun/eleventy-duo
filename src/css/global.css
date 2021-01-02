@@ -157,7 +157,6 @@ img {
 blockquote {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 1rem;
   padding-left: 1rem;
   border-left: 3px solid var(--accent);
   font-style: italic;
@@ -198,4 +197,13 @@ mark {
   padding: 1px 6px;
   margin: 0 2px;
   font-size: 0.95rem;
+}
+
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

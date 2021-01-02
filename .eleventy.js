@@ -28,7 +28,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
-  eleventyConfig.addPassthroughCopy({ 'src/assets/images': 'images' });
+  eleventyConfig.addPassthroughCopy({ 'src/images': 'images' });
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.setBrowserSyncConfig({ files: [manifestPath] });
 

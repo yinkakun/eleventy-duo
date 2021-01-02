@@ -2,8 +2,25 @@
 layout: base
 ---
 
-<header class="intro">
-  {{ content | safe }}
+<header class="hero">
+  <div class="hero-content">
+    <div class="intro">
+      {{ content | safe }}
+    </div>
+
+    <ul class="hero__social-links">
+      <li>
+        <a href="">Email</a>
+      </li>
+      <li>
+        <a href="">Github</a>
+      </li>
+      <li>
+        <a href="">Twitter</a>
+      </li>
+    </ul>
+  </div>
+
 </header>
 
 <section class="post-list__wrapper">

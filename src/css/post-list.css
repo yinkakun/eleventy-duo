@@ -20,7 +20,7 @@
 
 .post-list__heading {
   font-size: var(--text-3xl);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .post-list {
@@ -41,12 +41,18 @@
 
 .post-list__title {
   font-size: var(--text-2xl);
+  margin-top: 0.5rem;
 }
 
 .post-list__title a {
   font-weight: normal;
   text-decoration: none;
   color: rgb(41, 41, 41);
+}
+
+.post-list__title a:hover {
+  /* color: var(--accent); */
+  text-decoration: underline;
 }
 
 .post-list__meta {
@@ -80,7 +86,7 @@
 
 .post-list__excerpt {
   margin-top: 1rem;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .post-list__read-more {
@@ -88,12 +94,15 @@
   font-size: 1rem;
   text-transform: capitalize;
   margin-top: 1rem;
-  text-decoration: none;
-  color: var(--accent);
+  text-decoration: underline;
+}
+
+.post-list__read-more:hover {
+  text-decoration: underline;
 }
 
 .all-posts-link {
-  margin-top: 6rem;
+  margin-top: 4rem;
   width: fit-content;
   display: inline-block;
   margin-left: auto;
