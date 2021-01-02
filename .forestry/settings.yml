@@ -1,0 +1,33 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: 
+webhook_url: 
+sections:
+- type: heading
+  label: Posts
+- type: directory
+  path: src/blog
+  label: Posts
+  create: documents
+  match: "*.md"
+  new_doc_ext: md
+  templates:
+  - post
+- type: heading
+  label: Pages
+- type: document
+  path: src/data/navigation.json
+  label: Navigation
+upload_dir: src/images
+public_path: "/images"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_output_directory: public
+  install_dependencies_command: yarn install
+  preview_docker_image: forestryio/node:12
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: yarn dev
