@@ -1,21 +1,23 @@
 <ul class="post-list">
   {% for post in postslist | reverse %}
     <li class="post-list__item">
-      <div class="post-list__meta">
-        <time datetime="{{ post.date | htmlDateString }}">
-          {{ post.date | readableDate }}
-        </time>
-        <span> | </span>
-        <span>{{ post | readingTime }} read</span>
-      </div>
+      <div>
+        <div class="post-list__meta">
+          <time datetime="{{ post.date | htmlDateString }}">
+            {{ post.date | readableDate }}
+          </time>
+          <span> | </span>
+          <span>{{ post | readingTime }} read</span>
+        </div>
 
-      <div class="post-list__tags">
-        {% for tag in post.data.tags %}
-          {%- if collections.tagList.indexOf(tag) != -1 -%}
-            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-            <a href="{{ tagUrl | url }}">#{{ tag }}</a>
-          {%- endif -%}
-        {% endfor %}
+        <div class="post-list__tags">
+          {% for tag in post.data.tags %}
+            {%- if collections.tagList.indexOf(tag) != -1 -%}
+              {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+              <a href="{{ tagUrl | url }}">#{{ tag }}</a>
+            {%- endif -%}
+          {% endfor %}
+        </div>
       </div>
 
       <h3 class="post-list__title">

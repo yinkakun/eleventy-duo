@@ -20,7 +20,9 @@
 }
 
 .site-title {
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .site-title a {
@@ -45,8 +47,9 @@
   color: rgb(117, 117, 117);
   text-decoration: none;
   /* color: rgb(41, 41, 41); */
-  padding: 0.5rem;
-  margin: 0.5rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   line-height: 20px;
 }
 
