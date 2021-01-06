@@ -1,7 +1,6 @@
 {
   "name": "Eleventy Duo",
-  "description": "A minimalist Eleventy theme for personal blog.",
-  "subtitle": "A minimalist Eleventy theme for personal blog.",
+  "description": "Eleventy Duo is a minimal and beautiful Eleventy theme for personal blogs.",
   "url": "https://eleventyduo.netlify.app",
   "author": {
     "name": "Author Name",
@@ -9,5 +8,41 @@
     "twitterHandle": "author_handle"
   },
   "socialImage": "/images/social-image.png",
-  "footerAttribution": true
+  "headerLinks": [
+    {
+      "text": "Blog",
+      "url": "/blog",
+      "external": false
+    },
+    {
+      "text": "About",
+      "url": "/about",
+      "external": false
+    }
+  ],
+  "socialLinks": [
+    {
+      "text": "Instagram",
+      "url": "https://instagram.com/",
+      "external": true
+    },
+    {
+      "text": "GitHub",
+      "url": "https://github.com/yinkakun/eleventy-duo",
+      "external": true
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/",
+      "external": true
+    }
+  ],
+  "footerLinks": [
+    {
+      "text": "RSS",
+      "url": "/feed.xml",
+      "external": true
+    }
+  ],
+  "showFooterAttribution": true
 }
