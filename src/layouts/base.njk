@@ -19,7 +19,7 @@
       {% endif %}
     </title>
 
-    <link rel="icon" type= “image/x-icon” href="/favicon.ico">
+    <link rel="icon" type= “image/x-icon” href="/images/favicon.ico">
 
     <meta property="og:title" content="{{  title or site.name | escape }}">
     <meta property="og:site_name" content="{{ site.name }}"/>
@@ -61,19 +61,30 @@
             </a>
           </h1>
 
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav-item">
-                <a href={{ "/subscribe" | url }}>subscribe</a>
-              </li>
-              <li class="nav-item">
-                <a href={{ "/blog/" | url }}>Blog</a>
-              </li>
-              <li class="nav-item">
-                <a href={{ "/about/" | url }}>About</a>
-              </li>
-            </ul>
-          </nav>
+          {% if site.headerLinks %}
+            <nav class="nav">
+              <ul class="nav__list">
+                {% for item in site.headerLinks %}
+                  {% set currentAttribute = '' %}
+                  {% set externalAttribute = '' %}
+
+                  {% if item.external %}
+                    {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
+                  {% endif %}
+
+                  {% if page.url == item.url %}
+                    {% set currentAttribute = 'aria-current="page"' %}
+                  {% endif %}
+
+                  <li class="nav-item">
+                    <a href="{{ item.url | url }}" {{ currentAttribute | safe }} {{ externalAttribute | safe }}>{{ item.text }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </nav>
+
+          {% endif %}
+
         </div>
       </header>
 
@@ -83,27 +94,47 @@
 
       <footer class="footer">
         <div class="footer__content">
-          <p>
-            <span>
-    Created by by 
-      <a href="https://twitter.com/yinkakun" target="_blank" rel="noopener">Yinka</a>
-            </span>
 
-            <span>|</span>
+          <ul class="hero__social-links">
+            {% if site.socialLinks %}
+              {% for item in site.socialLinks %}
+                {% set externalAttribute = '' %}
 
-            <span>
-      Powered by <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty</a>
-            </span>
-          </p>
+                {% if item.external %}
+                  {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
+                {% endif %}
 
-          <ul class="footer__nav-list">
-            <li>
-              <a href={{ "/styleguide/" | url }}>Styleguide</a>
-            </li>
-            <li>
-              <a href={{ "/feed.xml" | url}} >RSS</a>
-            </li>
+                <li>
+                  <a href="{{ item.url | url }}" {{ externalAttribute | safe }} >{{ item.text }}</a>
+                </li>
+              {% endfor %}
+            {% endif %}
+
+            {% if site.footerLinks %}
+
+              {% for item in site.footerLinks %}
+                {% set externalAttribute = '' %}
+
+                {% if item.external %}
+                  {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
+                {% endif %}
+
+                <li>
+                  <a href="{{ item.url | url }}" {{ externalAttribute | safe }} >{{ item.text }}</a>
+                </li>
+              {% endfor %}
+            {% endif %}
           </ul>
+
+          {% if site.showFooterAttribution %}
+            <p class="footer__attribution">
+          Created by
+      <a href="https://twitter.com/yinkakun" target="_blank" rel="noopener">Yinka,</a>
+       Powered by <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty,</a>
+        Checkout <a href="https://github.com/yinkakun/eleventy-duo" target="_blank" rel="noopener noreferrer">project's github repo </a>
+            </p>
+          {% endif %}
+
         </div>
       </div>
 
