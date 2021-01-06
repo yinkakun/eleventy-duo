@@ -2,9 +2,8 @@
   max-width: none;
   width: 100%;
   text-transform: capitalize;
-  position: absolute;
-  z-index: 100;
   text-transform: uppercase;
+  margin-bottom: 4rem;
 }
 
 .header__content {
@@ -16,7 +15,8 @@
   margin-right: auto;
   max-width: 48.75rem;
   padding: 1rem;
-  padding-top: 2rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
 }
 
 .site-title {
@@ -46,15 +46,18 @@
 .nav__list a {
   color: rgb(117, 117, 117);
   text-decoration: none;
-  /* color: rgb(41, 41, 41); */
-  margin-right: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  line-height: 20px;
+}
+
+.nav__list li {
+  margin-right: 2rem;
+}
+
+.nav__list li:last-child {
+  margin-right: 0;
 }
 
 .nav__list a:hover {
-  color: rgb(25, 25, 25);
   color: rgb(41, 41, 41);
-  /* text-decoration: no; */
 }
