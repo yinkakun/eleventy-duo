@@ -8,17 +8,21 @@ layout: base
       {{ content | safe }}
     </div>
 
-    <ul class="hero__social-links">
-      <li>
-        <a href="">Email</a>
-      </li>
-      <li>
-        <a href="">Github</a>
-      </li>
-      <li>
-        <a href="">Twitter</a>
-      </li>
-    </ul>
+    {% if site.socialLinks %}
+      <ul class="hero__social-links">
+        {% for item in site.socialLinks %}
+          {% set externalAttribute = '' %}
+
+          {% if item.external %}
+            {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
+          {% endif %}
+
+          <li>
+            <a href="{{ item.url | url }}" {{ externalAttribute | safe }}>{{ item.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
   </div>
 
 </header>
