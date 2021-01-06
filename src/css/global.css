@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 
 body {
   scrollbar-width: thin;
-  scrollbar-color: color-mod(var(--color) alpha(60%)) var(--background);
+  scrollbar-color: color-mod(var(--color) alpha(90%)) var(--background);
   height: 100%;
 }
 
@@ -23,7 +23,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: color-mod(var(--color) alpha(70%));
+  background-color: color-mod(var(--color) alpha(90%));
 }
 
 *,
