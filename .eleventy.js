@@ -2,7 +2,6 @@ const { DateTime } = require('luxon');
 const readingTime = require('eleventy-plugin-reading-time');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const Image = require('@11ty/eleventy-img');
 const fs = require('fs');
 const path = require('path');
 
@@ -30,64 +29,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addPassthroughCopy({ 'src/images': 'images' });
   eleventyConfig.setBrowserSyncConfig({ files: [manifestPath] });
-
-  eleventyConfig.addNunjucksAsyncShortcode('image', async function (src, alt) {
-    if (alt === undefined) {
-      // throw an error on missing alt (alt="" works okay)
-      throw new Error(`Missing \`alt\` on myImage from: ${src}`);
-    }
-
-    let metadata = await Image(src, {
-      widths: [null],
-      formats: ['jpeg'],
-      urlPath: '/images/',
-      outputDir: './public/images/',
-    });
-
-    let data = metadata.jpeg.pop();
-    return `<img src="${data.url}" width="${data.width}" height="${data.height}" alt="${alt}">`;
-  });
-
-  eleventyConfig.addNunjucksAsyncShortcode(
-    'responsiveimage',
-    async function (src, alt, sizes = '100vw') {
-      if (alt === undefined) {
-        throw new Error(`Missing \`alt\` on myImage from: ${src}`);
-      }
-
-      let metadata = await Image(src, {
-        widths: [null],
-        urlPath: '/images/',
-        outputDir: './public/images/',
-        formats: ['webp', 'jpeg'],
-        filenameFormat: function (id, src, width, format, options) {
-          const extension = path.extname(src);
-          const name = path.basename(src, extension);
-
-          return `${name}-${width}w.${format}`;
-        },
-      });
-
-      let lowsrc = metadata.jpeg[0];
-
-      return `<picture>
-      ${Object.values(metadata)
-        .map((imageFormat) => {
-          return `  <source type="image/${
-            imageFormat[0].format
-          }" srcset="${imageFormat
-            .map((entry) => entry.srcset)
-            .join(', ')}" sizes="${sizes}">`;
-        })
-        .join('\n')}
-        <img
-          src="${lowsrc.url}"
-          width="${lowsrc.width}"
-          height="${lowsrc.height}"
-          alt="${alt}">
-      </picture>`;
-    }
-  );
 
   eleventyConfig.addShortcode('bundledcss', function () {
     return manifest['main.css']
