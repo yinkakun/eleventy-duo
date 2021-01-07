@@ -42,7 +42,7 @@
     {% endif %}
 
     {% if not socialImage %}
-      {% set socialImage = site.socialImage %}
+      {% set socialImage = site.defaultSocialImage %}
     {% endif %}
     {% if socialImage %}
       <meta property="og:image" content="{{ socialImage | url | absoluteUrl(site.url) }}"/>

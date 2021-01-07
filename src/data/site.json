@@ -7,7 +7,7 @@
     "email": "author@site.com",
     "twitterHandle": "author_handle"
   },
-  "socialImage": "/images/social-image.png",
+  "defaultSocialImage": "/images/default-social-image.png",
   "headerLinks": [
     {
       "text": "Blog",
