@@ -31,8 +31,8 @@
     "dev": "run-p dev:*",
     "start": "eleventy --serve",
     "build": "run-s clean build:assets build:site",
-    "dev:assets": "APP_ENV=development webpack --mode production --watch",
-    "dev:site": "APP_ENV=development eleventy --serve",
+    "dev:assets": "env APP_ENV=development webpack --mode production --watch",
+    "dev:site": "env APP_ENV=development eleventy --serve",
     "build:assets": "webpack --mode production",
     "build:site": "eleventy",
     "clean": "rm -rf ./public"
