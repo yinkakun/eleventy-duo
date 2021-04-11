@@ -14,3 +14,8 @@ fields:
 - type: textarea
   name: description
   label: description
+- name: permalink
+  type: text
+  label: Permalink
+  default: posts/{{ title | slug }}/index.html
+  hidden: true
