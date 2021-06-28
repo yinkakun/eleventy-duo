@@ -182,6 +182,26 @@ kbd {
   font-size: 0.95rem;
 }
 
+pre {
+  overflow: auto;
+  max-width: 100vw;
+  scrollbar-width: thin;
+  scrollbar-color: color-mod(var(--color) alpha(80%));
+}
+
+pre::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+pre::-webkit-scrollbar-thumb {
+  background-color: color-mod(var(--color) alpha(80%));
+}
+
 pre,
 code {
   font-family: 'Inconsolata', monospace;
