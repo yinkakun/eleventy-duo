@@ -184,7 +184,9 @@ kbd {
 
 pre {
   overflow: auto;
-  max-width: 100vw;
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
   scrollbar-width: thin;
   scrollbar-color: color-mod(var(--color) alpha(80%));
 }
