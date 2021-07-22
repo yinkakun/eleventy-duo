@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 
 const isDev = process.env.ELEVENTY_ENV === 'development';
@@ -14,6 +15,11 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'public', 'assets'),
     filename: `${baseFilename}.js`,
+  },
+
+  optimization: {
+    minimize: !isDev,
+    minimizer: [new TerserPlugin({ parallel: true })],
   },
 
   module: {
