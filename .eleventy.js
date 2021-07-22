@@ -66,6 +66,10 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
   });
 
+  eleventyConfig.addFilter('dateToIso', (dateString) => {
+    return new Date(dateString).toISOString()
+  });
+
   eleventyConfig.addFilter('head', (array, n) => {
     if (n < 0) {
       return array.slice(n);
