@@ -6,7 +6,7 @@ const htmlmin = require('html-minifier')
 const fs = require('fs');
 const path = require('path');
 
-const isDev = process.env.APP_ENV === 'development';
+const isDev = process.env.ELEVENTY_ENV === 'development';
 const isProd = process.env.ELEVENTY_ENV === 'production'
 
 const manifestPath = path.resolve(
