@@ -136,11 +136,11 @@ module.exports = function (eleventyConfig) {
       output: 'public',
       includes: 'includes',
       data: 'data',
-      layouts: 'layouts',
-      passthroughFileCopy: true,
-      templateFormats: ['html', 'njk', 'md'],
-      htmlTemplateEngine: 'njk',
-      markdownTemplateEngine: 'njk',
+      layouts: 'layouts'
     },
+    passthroughFileCopy: true,
+    templateFormats: ['html', 'njk', 'md'],
+    htmlTemplateEngine: 'njk',
+    markdownTemplateEngine: 'njk',
   };
 };
