@@ -206,11 +206,13 @@ pre::-webkit-scrollbar-thumb {
 
 pre,
 code {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 pre code {
   background: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 mark {
