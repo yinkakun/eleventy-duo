@@ -1,13 +1,13 @@
 {
-  "name": "Eleventy Duo",
-  "description": "Eleventy Duo is a minimal and beautiful Eleventy theme for personal blogs.",
+  "name": "WINNIE WU",
+  "description": "Hi WINNIE",
   "url": "https://eleventyduo.netlify.app",
   "author": {
     "name": "Author Name",
     "email": "author@site.com",
     "twitterHandle": "author_handle"
   },
-  "defaultSocialImage": "/images/default-social-image.png",
+  "defaultSocialImage": "",
   "headerLinks": [
     {
       "text": "Blog",
@@ -30,11 +30,6 @@
       "text": "GitHub",
       "url": "https://github.com/yinkakun/eleventy-duo",
       "external": true
-    },
-    {
-      "text": "Twitter",
-      "url": "https://twitter.com/",
-      "external": true
     }
   ],
   "footerLinks": [
@@ -44,5 +39,5 @@
       "external": true
     }
   ],
-  "showFooterAttribution": true
+  "showFooterAttribution": false
 }

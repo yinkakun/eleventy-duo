@@ -25,7 +25,7 @@
     "postcss-loader": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
     "terser-webpack-plugin": "^5.1.4",
-    "webpack": "^5.11.0",
+    "webpack": "^5.1.0--save",
     "webpack-cli": "^4.2.0",
     "webpack-manifest-plugin": "^3.0.0"
   },
