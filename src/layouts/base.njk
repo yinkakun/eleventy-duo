@@ -60,14 +60,11 @@
       <header class="header">
         <div class="header__content">
           <h1 class="site-title">
-            <a href={{ "/" | url }}>
-              <div class="site-logo">
-                <img src={{ site.logo }} alt="">
-              </div>
-              <div class="site-name">{{site.name}}</div>
+            <a class="site-logo" href={{ "/" | url }}>
+              <img src={{ site.logo }} alt="{{site.name}}">
+              <span>{{site.name}}</span>
             </a>
           </h1>
-
           {% if site.headerLinks %}
             <nav class="nav">
               <ul class="nav__list">

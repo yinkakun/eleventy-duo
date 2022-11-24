@@ -7,7 +7,7 @@
 }
 
 .header__content {
-  padding: 0 5rem;
+  padding: .5rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -20,16 +20,20 @@
 }
 
 .site-logo {
+  height: 100%;
   display: inline-block;
-  width: 14.5rem;
-  height: 14.5rem;
 }
 
 .site-logo >img{
-  width: 100%;
-  height:100%;
+  width: 3.85rem;
+  display: inline-block;
   vertical-align: middle;
-  margin-top: 1.2rem;
+  margin-top: 0rem;
+}
+
+.site-logo > span {
+  height: 100%;
+  display: inline-block;
 }
 
 .site-title {
@@ -37,16 +41,11 @@
   font-size: var(--text-xl);
 }
 
-.site-name{
-  height: 14.5rem;
-  display: inline-block;
-}
 
 .site-title a {
   color: rgb(47, 47, 47);
   font-weight: bold;
   text-decoration: none;
-  margin-bottom: 1rem;
 }
 
 .site-title a:hover {
