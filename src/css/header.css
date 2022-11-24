@@ -21,8 +21,8 @@
 
 .site-logo {
   display: inline-block;
-  width: 58px;
-  height: 58px;
+  width: 14.5rem;
+  height: 14.5rem;
 }
 
 .site-logo >img{
@@ -38,7 +38,7 @@
 }
 
 .site-name{
-  height: 58px;
+  height: 14.5rem;
   display: inline-block;
 }
 
