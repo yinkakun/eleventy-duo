@@ -61,7 +61,10 @@
         <div class="header__content">
           <h1 class="site-title">
             <a href={{ "/" | url }}>
-              {{site.name}}
+              <div class="site-logo">
+                <img src={{ site.logo }} alt="">
+              </div>
+              <div class="site-name">{{site.name}}</div>
             </a>
           </h1>
 

@@ -206,7 +206,7 @@ pre::-webkit-scrollbar-thumb {
 
 pre,
 code {
-  font-family: "Inconsolata", monospace;
+  font-family: 'Microsoft JhengHei', PingFang, STHeiti, sans-serif, serif;
 }
 
 pre code {
