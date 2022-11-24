@@ -1,0 +1,11 @@
+--- 
+layout: base.njk 
+permalink: /portfolio/ 
+---
+
+<h1>All Portfolio</h1>
+
+<div class="tags"></div>
+
+{% set postslist = collections.portfolios %}
+{% include "portfilos-list.njk" %}

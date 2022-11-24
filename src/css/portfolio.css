@@ -1,0 +1,37 @@
+.portfilo-list{
+  width: 780px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: .3px solid #e1e1e1;
+}
+
+.portfilo-lists__item{
+  width: 50%;
+  height: 17rem;
+  border: .4px solid #eee;
+  background: white;
+  position: relative;
+}
+
+.portfilo-lists__item a{
+  display:  block;
+  width: 100%;
+  height: 100%;
+  background: #fafafa66;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.portfilo-lists__item img{
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.portfilo-lists__item img:hover{
+  transform: scale(1.2);
+  transition: .5s linear;
+}
+
+

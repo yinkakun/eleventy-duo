@@ -2,7 +2,7 @@
   "name": "WINNIE WU",
   "description": "Hi WINNIE",
   "url": "https://eleventyduo.netlify.app",
-  "logo": "../images/logo.png",
+  "logo": "/images/logo.png",
   "author": {
     "name": "Winnie Wu",
     "email": "asgh03226@gmail.com",
@@ -13,6 +13,11 @@
     {
       "text": "Blog",
       "url": "/blog",
+      "external": false
+    },
+    {
+      "text": "Portfolio",
+      "url": "/portfolio",
       "external": false
     },
     {

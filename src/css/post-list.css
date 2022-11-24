@@ -23,11 +23,11 @@
   margin-bottom: 1rem;
 }
 
-.post-list {
+.post-list,.portfilo-list{
   list-style: none;
 }
 
-.post-list__item {
+.post-list__item{
   display: flex;
   flex-direction: column;
   padding-bottom: 3rem;

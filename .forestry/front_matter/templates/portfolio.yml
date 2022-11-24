@@ -1,0 +1,21 @@
+---
+label: Portfolio
+hide_body: false
+fields:
+  - type: text
+    name: title
+    label: title
+  - type: datetime
+    name: date
+    label: date
+  - type: list
+    name: tags
+    label: tags
+  - type: textarea
+    name: description
+    label: description
+  - name: permalink
+    type: text
+    label: Permalink
+    default: portfolios/{{ title | slug }}/index.html
+    hidden: true
