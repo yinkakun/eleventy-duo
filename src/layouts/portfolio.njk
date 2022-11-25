@@ -13,7 +13,7 @@ layout: base.njk
       <span>{{ content | readingTime }} read</span>
     </div>
   </header>
-  <img src="https://cdn.myportfolio.com/97208f89-cccc-4c37-9c3f-9edb60796c1d/2372d0a6-bf40-4503-b376-c46f07af068f_rw_1920.png?h=f141f55fad8ff646e66703255ca5ec8b" alt="" class="about__image">
+  <img src="{{ coverImg }}" alt="" class="about__image">
   {{ content | safe }}
   <p>
     {{ description }}
