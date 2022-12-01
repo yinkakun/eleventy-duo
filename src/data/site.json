@@ -11,12 +11,12 @@
   "defaultSocialImage": "",
   "headerLinks": [
     {
-      "text": "Blog",
+      "text": "BLOG",
       "url": "/blog",
       "external": false
     },
     {
-      "text": "Portfolio",
+      "text": "PortFolio",
       "url": "/portfolio",
       "external": false
     },

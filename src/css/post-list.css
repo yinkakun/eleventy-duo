@@ -15,13 +15,28 @@
 }
 
 .post-list__wrapper {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 
 .post-list__heading {
-  font-size: var(--text-3xl);
+  font-size: var(--text-2xl);
+  color:#3f3f3f;
   margin-bottom: 1rem;
+  padding-left: 10px;
+  position: relative;
+  border-left: 4px solid #7392CC;
 }
+
+/* .post-list__heading::after{
+  content: '';
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  background: #e1e1e1;
+
+  left:0;
+} */
+
 
 .post-list,.portfilo-list{
   list-style: none;
@@ -40,14 +55,18 @@
 }
 
 .post-list__title {
+  width: 90%;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   font-size: var(--text-2xl);
   margin-top: 0.5rem;
 }
 
 .post-list__title a {
-  font-weight: normal;
+  font-weight: 700;
   text-decoration: none;
-  color: rgb(41, 41, 41);
+  color: #3f3f3f;
 }
 
 .post-list__title a:hover {
@@ -108,6 +127,5 @@
   margin-left: auto;
   margin-right: auto;
   font-size: var(--text-lg);
-  text-decoration: underline;
   color: currentColor;
 }

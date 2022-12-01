@@ -48,6 +48,13 @@
   text-decoration: none;
 }
 
+
+
+.intro p{
+  color: #A9A9A9;
+  font-size: 18px;
+}
+
 .site-title a:hover {
   color: rgb(41, 41, 41);
 }

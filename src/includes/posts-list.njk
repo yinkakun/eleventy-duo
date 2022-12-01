@@ -21,9 +21,9 @@
       </div>
 
       <h3 class="post-list__title">
-        <a  href="{{ post.url }}">{{ post.data.title }}</a>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+        {{ post.cover }}
       </h3>
-
       <p class="post-list__excerpt">{{ post.templateContent | excerpt | safe  }}</p>
 
       <a class="post-list__read-more" href="{{ post.url }}">read article</a>

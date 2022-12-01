@@ -76,16 +76,16 @@ module.exports = function (eleventyConfig) {
     if (n < 0) {
       return array.slice(n);
     }
-
     return array.slice(0, n);
   });
-
+ 
   eleventyConfig.addCollection('tagList', function (collection) {
+    console.log("collections.posts", collection.posts)
+    
     let tagSet = new Set();
     collection.getAll().forEach(function (item) {
       if ('tags' in item.data) {
         let tags = item.data.tags;
-
         tags = tags.filter(function (item) {
           switch (item) {
             case 'all':

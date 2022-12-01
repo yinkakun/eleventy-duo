@@ -158,7 +158,8 @@ blockquote {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding-left: 1rem;
-  border-left: 3px solid var(--accent);
+  border-left: 3px solid #cbcbcb; 
+  line-height: 20px;
   font-style: italic;
 }
 

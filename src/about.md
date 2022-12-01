@@ -1,8 +1,8 @@
 ---
 title: about
 layout: about.njk
-name: XXX
-image: ''
+name:
+image: "/images/winnieww.jpg"
 ---
 
-
+WUKAIWEN
