@@ -15,6 +15,9 @@ layout: base.njk
   </header>
 
   <main class="post__content">
+    <div>
+      <img src="{{ post.data.coverImg }}"/>
+    </div>
     {{ content | safe }}
   </main>
 

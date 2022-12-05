@@ -18,6 +18,8 @@
 }
 
 .post__content {
+  text-align: justify;
+  letter-spacing: .2px;
   word-wrap: break-word;
 }
 
