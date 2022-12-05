@@ -99,7 +99,7 @@
       <footer class="footer">
         <div class="footer__content">
 
-          <ul class="hero__social-links">
+          {# <ul class="hero__social-links">
             {% if site.socialLinks %}
               {% for item in site.socialLinks %}
                 {% set externalAttribute = '' %}
@@ -128,7 +128,8 @@
                 </li>
               {% endfor %}
             {% endif %}
-          </ul>
+          </ul> #}
+          <p class="tag-copyright">Copyright © 2022 WUKAIWEN. All rights reserved.</p>
 
           {% if site.showFooterAttribution %}
             <p class="footer__attribution">
@@ -141,7 +142,7 @@
 
         </div>
       </div>
-
+      
     </footer>
 
     {% bundledjs %}

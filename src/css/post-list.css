@@ -16,6 +16,7 @@
 
 .post-list__wrapper {
   margin-top: 3rem;
+  position: relative;
 }
 
 .post-list__heading {
@@ -24,25 +25,18 @@
   margin-bottom: 1rem;
   padding-left: 10px;
   position: relative;
+  font-weight: 400;
   border-left: 4px solid #7392CC;
 }
 
-/* .post-list__heading::after{
-  content: '';
-  width: 4px;
-  height: 100%;
-  position: absolute;
-  background: #e1e1e1;
 
-  left:0;
-} */
-
-
-.post-list,.portfilo-list{
+.post-list,.portfilo-list, .home-portfolio-list__item{
   list-style: none;
 }
 
 .post-list__item{
+  text-align: justify;
+  letter-spacing: 0.3px;
   display: flex;
   flex-direction: column;
   padding-bottom: 3rem;
@@ -50,12 +44,55 @@
   border-top: 1px solid rgba(230, 230, 230, 1);
 }
 
-.post-list__item:last-child {
+/* .post-list__item:last-child {
   border-bottom: 1px solid rgba(230, 230, 230, 1);
+} */
+
+.home-portfolio-item {
+  cursor: pointer;
+  display:inline-block; 
+  width:25%; 
+  height:300px; 
+  background:#e1e1e1;
+  /* border-left:1px solid white;  */
+  transition: .5s;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-portfolio-item + .home-portfolio-item{
+  margin-left:0.25rem ;
+}
+
+.home-portfolio-item::after{
+  content:'';
+  position: absolute;
+  left:0;
+  top:0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: #00000033;
+}
+
+.home-portfolio-item  img{
+  margin-top:0 ;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ transition: .5s;
+}
+
+.home-portfolio-item:hover{
+  transform: scale(1.05);
+}
+
+.home-portfolio-item > img:hover{
+  transform: scale(1.05);
 }
 
 .post-list__title {
-  width: 90%;
+  width: 100%;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   overflow: hidden;
@@ -105,7 +142,8 @@
 
 .post-list__excerpt {
   margin-top: 1rem;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  color: rgba(71, 71, 71, 0.8);
 }
 
 .post-list__read-more {
@@ -120,12 +158,15 @@
   text-decoration: underline;
 }
 
-.all-posts-link {
-  margin-top: 4rem;
+.all-posts-link, .all-portfolio-link {
+  margin-top: 4.5rem;
   width: fit-content;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
   font-size: var(--text-lg);
   color: currentColor;
+  position: absolute;
+  bottom: 0;
+  right:.5rem;
 }

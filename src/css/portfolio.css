@@ -1,5 +1,5 @@
 .portfilo-list{
-  width: 780px;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -12,6 +12,16 @@
   border: .4px solid #eee;
   background: white;
   position: relative;
+}
+
+.portfolio-list__wrapper {
+  margin-top: 3rem;
+  position: relative;
+  
+}
+
+.portfilo-container{
+  display: flex;
 }
 
 .portfilo-lists__item a{

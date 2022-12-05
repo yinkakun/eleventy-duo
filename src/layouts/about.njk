@@ -7,8 +7,12 @@ layout: base.njk
     <div class="about-cover"> 
       <img src="{{ image | url }}"  alt="">
     </div>
-    <div class="about-content">
-      {{ content | safe }}
+    <div class="about-content" style="position:relative; height:260px;">
+      <p style="font-size:25px; font-weight:700; color:#808080;letter-spacing:0.5px; position:absolute; top:30px; left:-30px;"> WU-KAI-WEN | WINNIE </p>
+      <div style=" font-size:16px; font-weight:500; color:#808080;
+      letter-spacing:0.5px; line-height:2; position:absolute; top:100px; left:-30px;">
+        {{ content | safe }}
+      </div>
     </div>
   </div>
 </div>

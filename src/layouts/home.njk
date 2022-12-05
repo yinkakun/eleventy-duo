@@ -24,12 +24,21 @@ layout: base
     {% endif %} #}
   </div>
 </header>
-
+<section class="portfolio-list__wrapper">
+ <h2 class="post-list__heading">近期作品</h2>
+  <div class="portfilo-container">
+    {% for portfolio in collections.portfolios | head(-4) %}
+      <a class="home-portfolio-item" href="{{ portfolio.url }}">
+      <img src="{{ portfolio.data.coverImg }}">
+    </a>
+    {% endfor %} 
+  </div>
+    <a class="all-portfolio-link" href="{{ '/portfolios/' | url }}"></a>
+</section>
 <section class="post-list__wrapper">
   <h2 class="post-list__heading">最新文章</h2>
   {% set postslist = collections.posts | head(-2) %}
   {% include "posts-list.njk" %}
-
-  <a class="all-posts-link" href="{{ '/blog/' | url }}">View All Posts</a>
+  <a class="all-posts-link" href="{{ '/blog/' | url }}">看更多...</a>
 </section>
 
