@@ -6,23 +6,6 @@ layout: base
     <div class="intro">
       {{ content | safe }}
     </div>
-    {% if site.socialLinks %}
-      <ul class="hero__social-links">
-        {% for item in site.socialLinks %}
-          {% set externalAttribute = '' %}
-
-          {% if item.external %}
-            {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
-          {% endif %}
-
-          <li>
-            <a class="m-icons" href="{{ item.url | url }}" {{ externalAttribute | safe }}>
-              <img  style="width:30px; height:30px;" src="{{ item.iconsUrl }}" alt="{{ item.text }}">
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
   </div>
 </header>
 {% if collections.portfolios %}
@@ -42,6 +25,6 @@ layout: base
   <h2 class="post-list__heading">最新文章</h2>
   {% set postslist = collections.posts | head(-2) %}
   {% include "posts-list.njk" %}
-  <a class="all-posts-link" href="{{ '/blog/' | url }}">看更多...</a>
+  {# <a class="all-posts-link" href="{{ '/blog/' | url }}">看更多...</a> #}
 </section>
 

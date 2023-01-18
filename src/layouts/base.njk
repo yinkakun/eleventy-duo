@@ -81,9 +81,22 @@
                   {% endif %}
 
                   <li class="nav-item">
-                    <a href="{{ item.url | url }}" {{ currentAttribute | safe }} {{ externalAttribute | safe }}>{{ item.text }}</a>
+                    <a href="{{ item.url | url }}" {{ currentAttribute | safe }} {{ externalAttribute | safe }}><span>{{ item.text }}</span></a>
                   </li>
                 {% endfor %}
+                        {% for item in site.socialLinks %}
+          {% set externalAttribute = '' %}
+
+          {% if item.external %}
+            {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
+          {% endif %}
+
+          <li>
+            <a class="m-icons" href="{{ item.url | url }}" {{ externalAttribute | safe }}>
+              <img  style="width:30px; height:30px;" src="{{ item.iconsUrl }}" alt="{{ item.text }}">
+            </a>
+          </li>
+        {% endfor %}
               </ul>
             </nav>
 

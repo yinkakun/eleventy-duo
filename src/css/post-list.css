@@ -23,12 +23,11 @@
   font-size: var(--text-2xl);
   color:#3f3f3f;
   margin-bottom: 1rem;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   position: relative;
   font-weight: 400;
-  border-left: 4px solid #7392CC;
+  /* border-left: 4px solid #7392CC; */
 }
-
 
 .post-list,.portfilo-list, .home-portfolio-list__item{
   list-style: none;
