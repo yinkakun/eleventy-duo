@@ -31,6 +31,22 @@
   margin-top: 0rem;
 }
 
+.m-icons{
+  width:2.5rem;
+  height:2.5rem;
+  opacity: .5;
+  color:#696969;
+}
+
+.m-icons:hover{
+  opacity: 1;
+}
+
+.m-icons > img{
+  margin-top: 0;
+  width: 100%;
+}
+
 .site-logo > span {
   height: 100%;
   display: inline-block;
@@ -66,23 +82,30 @@
   font-size: var(--text-base);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  
 }
 
 .nav__list a {
-  color: rgb(117, 117, 117);
+  /* color: rgb(117, 117, 117); */
   text-decoration: none;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  color: linear-gradient(90deg ,red , yellow);
 }
 
 .nav__list li {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
+  padding-bottom: .3rem;
+  border-bottom:1px solid #e1e1e1;
+  transition: 5.;
 }
 
 .nav__list li:last-child {
   margin-right: 0;
 }
 
+/* 目標方向、開始顏色、結束顏色 */
 .nav__list a:hover {
-  color: rgb(41, 41, 41);
+  background: linear-gradient(115deg ,#7392CC 50%, transparent 50%);
+  /* background: linear-gradient(90deg ,#7392CC 100% ,#000 0); */
 }

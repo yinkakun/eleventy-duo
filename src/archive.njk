@@ -3,11 +3,12 @@ layout: base.njk
 permalink: /blog/ 
 ---
 
-{# <h1>所有文章</h1>
+<h2 style="color:#5F5F5F;">所有文章</h2>
 
-<div class="tags">
+<div class="tags ">
   {% include "tags-list.njk" %}
-</div> #}
+  
+</div>
 
 {% set postslist = collections.posts %}
 {% include "posts-list.njk" %}

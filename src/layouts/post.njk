@@ -15,8 +15,8 @@ layout: base.njk
   </header>
 
   <main class="post__content">
-    <div>
-      <img src="{{ post.data.coverImg }}"/>
+    <div style="width:100%; height:500px; overflow:hidden;   object-fit: cover;">
+      <img src="{{ coverImg }}"/>
     </div>
     {{ content | safe }}
   </main>
@@ -28,14 +28,13 @@ layout: base.njk
         <a href="{{ tagUrl | url }}">#{{ tag }}</a>
       {% endfor %}
     </div>
-
-    <nav class="post__pagination">
+  
+    <nav class="post__pagination" >
       {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
       {%- if nextPost %}
 
         <a href="{{ nextPost.url | url }}">
           <span>←</span>
-          <span>{{ nextPost.data.title }}</span>
         </a>
 
       {% endif %}
@@ -44,7 +43,6 @@ layout: base.njk
       {%- if previousPost %}
 
         <a href="{{ previousPost.url | url }}">
-          <span>{{ previousPost.data.title }}</span>
           <span>→</span>
         </a>
 

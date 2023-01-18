@@ -1,13 +1,12 @@
 ---
 layout: base
 ---
-
 <header class="hero">
   <div class="hero-content">
     <div class="intro">
       {{ content | safe }}
     </div>
-    {# {% if site.socialLinks %}
+    {% if site.socialLinks %}
       <ul class="hero__social-links">
         {% for item in site.socialLinks %}
           {% set externalAttribute = '' %}
@@ -17,13 +16,16 @@ layout: base
           {% endif %}
 
           <li>
-            <a href="{{ item.url | url }}" {{ externalAttribute | safe }}>{{ item.text }}</a>
+            <a class="m-icons" href="{{ item.url | url }}" {{ externalAttribute | safe }}>
+              <img  style="width:30px; height:30px;" src="{{ item.iconsUrl }}" alt="{{ item.text }}">
+            </a>
           </li>
         {% endfor %}
       </ul>
-    {% endif %} #}
+    {% endif %}
   </div>
 </header>
+{% if collections.portfolios %}
 <section class="portfolio-list__wrapper">
  <h2 class="post-list__heading">近期作品</h2>
   <div class="portfilo-container">
@@ -35,6 +37,7 @@ layout: base
   </div>
     <a class="all-portfolio-link" href="{{ '/portfolios/' | url }}"></a>
 </section>
+{% endif %} 
 <section class="post-list__wrapper">
   <h2 class="post-list__heading">最新文章</h2>
   {% set postslist = collections.posts | head(-2) %}

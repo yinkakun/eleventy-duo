@@ -9,7 +9,7 @@
 
 .hero p {
   font-size: var(--text-2xl);
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 
 .hero__social-links {
@@ -21,8 +21,8 @@
 }
 
 .hero__social-links > li {
-  margin-right: 2rem;
-  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-top: .3rem;
 }
 
 .hero__skip-link {

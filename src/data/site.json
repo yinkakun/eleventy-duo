@@ -28,12 +28,14 @@
   ],
   "socialLinks": [
     {
-      "text": "Instagram",
+      "text": "Linkedin",
       "url": "https://instagram.com/",
+      "iconsUrl": "/images/linkedin.svg",
       "external": true
     },
     {
       "text": "GitHub",
+      "iconsUrl": "/images/github.svg",
       "url": "https://github.com/yinkakun/eleventy-duo",
       "external": true
     }
@@ -41,6 +43,7 @@
   "footerLinks": [
     {
       "text": "RSS",
+      "iconsUrl": "/images/rss.svg",
       "url": "/feed.xml",
       "external": true
     }
