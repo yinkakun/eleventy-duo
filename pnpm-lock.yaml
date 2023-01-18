@@ -13,6 +13,7 @@ specifiers:
   babel-loader: ^8.2.2
   css-loader: ^5.0.1
   cssnano: ^4.1.10
+  eleventy-duo: 'link:'
   eleventy-plugin-reading-time: ^0.0.1
   html-minifier: ^4.0.0
   mini-css-extract-plugin: ^1.3.3
@@ -30,6 +31,7 @@ specifiers:
   webpack-manifest-plugin: ^3.0.0
 
 dependencies:
+  eleventy-duo: 'link:'
   remove: 0.1.5
 
 devDependencies:

@@ -42,6 +42,7 @@
     "clean": "rm -rf ./public"
   },
   "dependencies": {
+    "eleventy-duo": "link:",
     "remove": "^0.1.5"
   }
 }
