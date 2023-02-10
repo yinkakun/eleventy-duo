@@ -17,6 +17,7 @@
 }
 
 .main {
+  margin-top: 9.75rem;
   display: flex;
   padding-bottom: 4rem;
   flex-direction: column;
@@ -34,3 +35,7 @@
     width: 29.25rem;
   }
 }
+
+
+
+

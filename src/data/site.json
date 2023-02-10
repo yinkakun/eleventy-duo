@@ -29,14 +29,14 @@
   "socialLinks": [
     {
       "text": "Linkedin",
-      "url": "https://instagram.com/",
+      "url": "www.linkedin.com/in/wukaiwan",
       "iconsUrl": "/images/linkedin.svg",
       "external": true
     },
     {
       "text": "GitHub",
       "iconsUrl": "/images/github.svg",
-      "url": "https://github.com/yinkakun/eleventy-duo",
+      "url": "https://github.com/wineuwu",
       "external": true
     }
   ],
