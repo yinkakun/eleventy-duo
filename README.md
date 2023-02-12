@@ -40,6 +40,9 @@ Eleventy Duo is a minimal and beautiful Eleventy theme for personal blogs.
 
 - Use `yarn build` to build a production version of the site.
 
+## [static website forms](https://fabform.io)
+You can add a fabform static website form to this website to save form submissions
+
 ## Customize
 
 Open `data/site.json` and adjust the values to your details, it contains vital information to make the site your own. You'll need to change the description, title and url to match with the project, edit navigation items and social media links.
