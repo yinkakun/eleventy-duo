@@ -34,6 +34,7 @@
   display: inline-block;
   vertical-align: middle;
   margin-top: 0rem;
+
 }
 
 .m-icons{
@@ -84,7 +85,6 @@
   font-size: var(--text-base);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-
 }
 
 .nav__list a {
@@ -122,7 +122,10 @@ margin-top: 4px;
 }
 
 .nav__btn {
-
+  width: 150px;
+  height: 150px;
+  background: #696969;
+  border-radius: 100%;
 }
 
 @media screen and (max-width:768px) { 
@@ -131,7 +134,7 @@ margin-top: 4px;
     width: 29.25rem;
   }
   nav{
-   display:  none; 
+   display: none; 
   }
   
 }

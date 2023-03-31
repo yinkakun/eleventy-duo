@@ -41,6 +41,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/images': 'images' });
   eleventyConfig.setBrowserSyncConfig({ files: [manifestPath] });
 
+  // slides
+  eleventyConfig.addPassthroughCopy({"src/slides" : 'assets'})
+
   eleventyConfig.addShortcode('bundledcss', function () {
     return manifest['main.css']
       ? `<link href="${manifest['main.css']}" rel="stylesheet" />`
