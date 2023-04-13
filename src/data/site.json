@@ -11,8 +11,8 @@
   "defaultSocialImage": "",
   "headerLinks": [
     {
-      "text": "BLOG",
-      "url": "/blog",
+      "text": "ABOUT",
+      "url": "/about",
       "external": false
     },
     {
@@ -21,13 +21,13 @@
       "external": false
     },
     {
-      "text": "SLIDES",
-      "url": "/slides",
+      "text": "BLOG",
+      "url": "/blog",
       "external": false
     },
     {
-      "text": "ABOUT",
-      "url": "/about",
+      "text": "SLIDES",
+      "url": "/slides",
       "external": false
     }
   ],
