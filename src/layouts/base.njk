@@ -88,7 +88,7 @@
                   {% if item.external %}
                   {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
                   {% endif %}
-                  <li>
+                  <li class="exter-btn">
                     <a class="m-icons" href="{{ item.url | url }}" {{ externalAttribute | safe }}>
                       <img  style="width:30px; height:30px;" src="{{ item.iconsUrl }}" alt="{{ item.text }}">
                     </a>

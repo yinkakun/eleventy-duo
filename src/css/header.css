@@ -82,7 +82,7 @@
 
 .nav__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
   font-size: var(--text-base);
   padding-top: 0.5rem;
@@ -129,9 +129,16 @@ margin-top: 4px;
 }
 
 @media screen and (max-width:768px) { 
+
   .header {
-    max-width: 760px;
+    max-width: 680px;
     width: 100%;
+    font-size: 14px;
+  }
+
+  .nav__list li {
+    margin-right: 0;
+    
   }
 
   .header__content {
@@ -143,7 +150,6 @@ margin-top: 4px;
     padding: 0 1rem;
   }
   .nav__list{
-    
     justify-content: space-around;
   }
   
@@ -151,4 +157,11 @@ margin-top: 4px;
     margin-right:20px;
     font-size: 22px;
   }
+}
+
+@media screen and (max-width:380px) { 
+  .exter-btn{
+    display: none;
+  }
+  
 }
