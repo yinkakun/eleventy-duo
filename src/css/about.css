@@ -9,6 +9,23 @@
   margin: 0;
 }
 
+/* 
+  <div class="about-container">
+  <div class="about-cover"> 
+    <img src="{{ image | url }}"  alt="">
+  </div>
+  <div class="about-content" style="position:relative; height:260px;">
+    <p> WU-KAI-WEN | WINNIE WU </p>
+    <div style=" font-size:16px; font-weight:400; color:#808080;
+    letter-spacing:0.2px; line-height:1.8; position:absolute; top:100px; left:-30px; text-align:justify;">
+      {{ content | safe }}
+    </div>
+  </div>
+  </div> 
+*/
+
+
+
 .about-container {
   display: flex;
   justify-content: space-between;
@@ -20,10 +37,56 @@
   height: auto;
 }
 
+.about-content > p {
+  padding-top:30px ;
+  font-size:25px; 
+  font-weight:700; 
+  color:#808080;
+  letter-spacing:0.5px; 
+}
+
 .about-cover {
   width:250px;
   height: 250px;
 }
+
+.about-txt {
+  margin-top: 15px;
+  font-size:16px; 
+  font-weight:400; 
+  color:#808080;
+  letter-spacing:0.2px; line-height:1.8;  
+  text-align:justify;
+}
+
+@media screen and (max-width:768px) { 
+  h2,.tags{
+    text-align: justify;
+    margin-top: 15px;
+  }
+  .about-container {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-cover {
+    width:280px;
+  }
+
+
+  .about-content{
+  width:100%;
+  
+  }
+
+  .about-content > p {
+    text-align: center;
+    margin-top: 30px;
+    font-size:20px; 
+  }
+}
+
 
 
 
