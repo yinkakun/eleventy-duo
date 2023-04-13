@@ -1,5 +1,4 @@
 .header {
-  max-width: none;
   width: 100%;
   text-transform: capitalize;
   text-transform: uppercase;
@@ -8,8 +7,12 @@
   top:0;
   left: 0;
   right: 0;
-  margin: auto;
+  margin:0 auto;
   background: white;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+  font-size: 18px;
+  z-index:5;
+  /* border: 1px solid #e1e1e1; */
 }
 
 .header__content {
@@ -21,7 +24,6 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 48.75rem;
-  border-bottom: 1px solid rgba(230, 230, 230, 1);
 }
 
 .site-logo {
@@ -106,8 +108,6 @@ margin-top: 4px;
 
 .nav__list li {
   margin-right: 1.5rem;
-  /* padding-bottom: .3rem; */
-  /* border-bottom:1px solid #e1e1e1; */
   transition: 5.;
 }
 
@@ -130,11 +130,25 @@ margin-top: 4px;
 
 @media screen and (max-width:768px) { 
   .header {
-    min-width: 29.25rem;
-    width: 29.25rem;
+    max-width: 760px;
+    width: 100%;
+  }
+
+  .header__content {
+    padding: .5rem 0;
+    justify-content: center; 
   }
   nav{
-   display: none; 
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .nav__list{
+    
+    justify-content: space-around;
   }
   
+  .site-logo > span {
+    margin-right:20px;
+    font-size: 22px;
+  }
 }

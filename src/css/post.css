@@ -5,7 +5,14 @@
 }
 
 .post > * + * {
-  margin-top: 4rem;
+  margin-top: 1rem;
+}
+
+.post-img{
+  width:100%;  
+  overflow:hidden;   
+  object-fit: cover;
+  margin-bottom: 50px;
 }
 
 .post__details {

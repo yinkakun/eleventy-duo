@@ -96,8 +96,9 @@ module.exports = function (eleventyConfig) {
             case 'post':
             case 'posts':
             case 'portfolio':
-              case 'portfolios':
-              return false;
+            case 'portfolios':
+            case 'slide':
+            return false;
           }
 
           return true;

@@ -38,14 +38,14 @@
   letter-spacing: 0.3px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding: 3rem 0;
   border-top: 1px solid rgba(230, 230, 230, 1);
 }
 
-/* .post-list__item:last-child {
-  border-bottom: 1px solid rgba(230, 230, 230, 1);
-} */
+.post-list__item:first-child {
+  border-top: 1px solid rgb(239, 239, 239);
+  padding-top: 1rem;
+}
 
 .home-portfolio-item {
   cursor: pointer;

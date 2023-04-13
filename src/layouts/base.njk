@@ -56,7 +56,6 @@
   </head>
   <body>
     <div class="layout-wrapper">
-
       <header class="header">
         <div class="header__content">
           <h1 class="site-title">
@@ -65,43 +64,39 @@
               <span>{{site.name}}</span>
             </a>
           </h1>
-          {% if site.headerLinks %}
+        {% if site.headerLinks %}
             <nav class="nav">
               <ul class="nav__list">
                 {% for item in site.headerLinks %}
-                  {% set currentAttribute = '' %}
+                    {% set currentAttribute = '' %}
+                    {% set externalAttribute = '' %}
+
+                    {% if item.external %}
+                      {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
+                    {% endif %}
+
+                    {% if page.url == item.url %}
+                      {% set currentAttribute = 'aria-current="page"' %}
+                    {% endif %}
+
+                    <li class="nav-item">
+                      <a href="{{ item.url | url }}" {{ currentAttribute | safe }} {{ externalAttribute | safe }}><span>{{ item.text }}</span></a>
+                    </li>
+                  {% endfor %}
+                  {% for item in site.socialLinks %}
                   {% set externalAttribute = '' %}
-
                   {% if item.external %}
-                    {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
+                  {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
                   {% endif %}
-
-                  {% if page.url == item.url %}
-                    {% set currentAttribute = 'aria-current="page"' %}
-                  {% endif %}
-
-                  <li class="nav-item">
-                    <a href="{{ item.url | url }}" {{ currentAttribute | safe }} {{ externalAttribute | safe }}><span>{{ item.text }}</span></a>
+                  <li>
+                    <a class="m-icons" href="{{ item.url | url }}" {{ externalAttribute | safe }}>
+                      <img  style="width:30px; height:30px;" src="{{ item.iconsUrl }}" alt="{{ item.text }}">
+                    </a>
                   </li>
                 {% endfor %}
-                        {% for item in site.socialLinks %}
-          {% set externalAttribute = '' %}
-
-          {% if item.external %}
-            {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
-          {% endif %}
-
-          <li>
-            <a class="m-icons" href="{{ item.url | url }}" {{ externalAttribute | safe }}>
-              <img  style="width:30px; height:30px;" src="{{ item.iconsUrl }}" alt="{{ item.text }}">
-            </a>
-          </li>
-        {% endfor %}
               </ul>
-      </nav>
-
+            </nav>
           {% endif %}
-
         </div>
       </header>
 
@@ -111,51 +106,9 @@
 
       <footer class="footer">
         <div class="footer__content">
-
-          {# <ul class="hero__social-links">
-            {% if site.socialLinks %}
-              {% for item in site.socialLinks %}
-                {% set externalAttribute = '' %}
-
-                {% if item.external %}
-                  {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
-                {% endif %}
-
-                <li>
-                  <a href="{{ item.url | url }}" {{ externalAttribute | safe }} >{{ item.text }}</a>
-                </li>
-              {% endfor %}
-            {% endif %}
-
-            {% if site.footerLinks %}
-
-              {% for item in site.footerLinks %}
-                {% set externalAttribute = '' %}
-
-                {% if item.external %}
-                  {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
-                {% endif %}
-
-                <li>
-                  <a href="{{ item.url | url }}" {{ externalAttribute | safe }} >{{ item.text }}</a>
-                </li>
-              {% endfor %}
-            {% endif %}
-          </ul> #}
-          <p class="tag-copyright">Copyright © 2022 WUKAIWEN. All rights reserved.</p>
-
-          {% if site.showFooterAttribution %}
-            <p class="footer__attribution">
-          Created by
-      <a href="https://twitter.com/yinkakun" target="_blank" rel="noopener">Yinka,</a>
-       Powered by <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty,</a>
-        Checkout <a href="https://github.com/yinkakun/eleventy-duo" target="_blank" rel="noopener noreferrer">project's github repo </a>
-            </p>
-          {% endif %}
-
+          <p class="tag-copyright">Copyright © 2023 WUKAIWEN. All rights reserved.</p>
         </div>
       </div>
-      
     </footer>
 
     {% bundledjs %}
