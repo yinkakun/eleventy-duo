@@ -39,8 +39,10 @@
   display: flex;
   flex-direction: column;
   padding: 3rem 0;
-  border-top: 1px solid rgba(230, 230, 230, 1);
+  border-top: 1px solid rgb(227, 227, 227);
+  
 }
+
 
 .post-list__item:first-child {
   border-top: 1px solid rgb(239, 239, 239);

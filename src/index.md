@@ -3,11 +3,9 @@ layout: home
 title: "WINNIE WU"
 ---
 
-From 2023.04
+TMI From 2023.04 :
+<span style="font-weight: 500; margin-top:20px; display:block;">『 時間走的太快，快到我來不及去記住每個日常的美好了，於是就有了這個地方 』</span>
 
-時間走太快，快到我來不及記住每個日常的美好了。
-所以建立這個地方來記錄。
+<div>
 
-.....
-
-最近一直在聽 -> <a href="https://www.youtube.com/watch?v=5sbFn-FPdAk" target="_blank">吳青峰『最難的是相遇』</a> ...
+</div>

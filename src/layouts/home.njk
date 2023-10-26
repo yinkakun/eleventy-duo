@@ -3,6 +3,7 @@ layout: base
 ---
 <header class="hero">
   <div class="hero-content">
+
     <div class="intro">
       {{ content | safe }}
     </div>
@@ -23,7 +24,7 @@ layout: base
 {% endif %} 
 <section class="post-list__wrapper">
   <h2 class="post-list__heading">最新文章</h2>
-  {% set postslist = collections.posts | head(-2) %}
+  {% set postslist = collections.posts | head(-3) %}
   {% include "posts-list.njk" %}
   {# <a class="all-posts-link" href="{{ '/blog/' | url }}">看更多...</a> #}
 </section>

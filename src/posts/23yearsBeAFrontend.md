@@ -4,7 +4,7 @@ description: 依照慣例，這是一篇年末回顧文
 permalink: posts/{{ title | slug }}/index.html
 coverImg: https://i.imgur.com/s6apAhM.png
 date: "2021-03-17"
-tags: [心路歷程, 2020]
+tags: [2020, 日常紀錄]
 ---
 
 > 開始之前，想先謝謝願意花時間閱讀這篇文章的你，希望將近四個月的轉職歷程能給在猶豫的你一點想法。
