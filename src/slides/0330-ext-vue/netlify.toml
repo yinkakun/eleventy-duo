@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/slides/0330-ext-vue/*"
+  to = "/slides/0330-ext-vue/index.html"
+  status = 200
