@@ -38,12 +38,16 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.setDataDeepMerge(true);
+  
   eleventyConfig.addPassthroughCopy({ 'src/images': 'images' });
+
   eleventyConfig.setBrowserSyncConfig({ files: [manifestPath] });
-
+  
   // slides
-  eleventyConfig.addPassthroughCopy({"src/slides" : 'assets'})
+  eleventyConfig.addPassthroughCopy("src/slides/**");
 
+  
+  
   eleventyConfig.addShortcode('bundledcss', function () {
     return manifest['main.css']
       ? `<link href="${manifest['main.css']}" rel="stylesheet" />`
@@ -54,7 +58,9 @@ module.exports = function (eleventyConfig) {
     return manifest['main.js']
       ? `<script src="${manifest['main.js']}"></script>`
       : '';
+      
   });
+
 
   eleventyConfig.addFilter('excerpt', (post) => {
     const content = post.replace(/(<([^>]+)>)/gi, '');
