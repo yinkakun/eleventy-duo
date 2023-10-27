@@ -46,7 +46,7 @@ module.exports = function (eleventyConfig) {
   // slides
   eleventyConfig.addPassthroughCopy("src/slides/**");
 
-  
+  eleventyConfig.addPassthroughCopy("_redirects");
   
   eleventyConfig.addShortcode('bundledcss', function () {
     return manifest['main.css']
