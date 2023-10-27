@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/slides/1025-vue-tw-slidev/*"
-  to = "/slides/1025-vue-tw-slidev/index.html"
-  status = 200
