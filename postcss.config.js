@@ -1,5 +1,4 @@
 const autoprefixer = require('autoprefixer');
-const postcssColorMod = require('postcss-color-mod-function');
 const postcssPresetEnv = require('postcss-preset-env');
 const atImport = require('postcss-import');
 
@@ -13,7 +12,6 @@ const plugins = [
       'custom-properties': true,
     },
   }),
-  postcssColorMod,
 ];
 
 const isDev = process.env.APP_ENV === 'development';

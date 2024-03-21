@@ -2,4 +2,7 @@
   --accent: #0074d9;
   --background: #fffffe;
   --color: rgb(41, 41, 41);
+  --color-80: rgba(41, 41, 41, .8);
+  --color-30: rgba(41, 41, 41, .3);
+  --color-10: rgba(41, 41, 41, .1);
 }
